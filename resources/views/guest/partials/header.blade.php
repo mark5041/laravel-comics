@@ -1,9 +1,9 @@
 <div class="nav">
-        <div class="container">
+        <div class="my-container">
             <div class="logo">
                 <img src="{{asset('img/dc-logo.png')}}" alt="">
             </div>
-            <ul>
+            <ul class="mb-0">
                 <li><a href="#">characters</a></li>
                 <li><a href="#">comics</a></li>
                 <li><a href="#">movies</a></li>

@@ -10972,34 +10972,45 @@ html {
   font-size: 100%;
 }
 
-.nav .container {
-  align-items: center;
+.my-container {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
 }
 
-.nav .container .logo {
+.background {
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-size: cover;
+  height: 420px;
+}
+
+.nav .my-container {
+  align-items: center;
+}
+
+.nav .my-container .logo {
   flex-grow: 4;
 }
 
-.nav .container .logo img {
+.nav .my-container .logo img {
   width: 60px;
 }
 
-.nav .container ul {
+.nav .my-container ul {
   list-style: none;
   height: 100%;
   display: flex;
   justify-content: center;
 }
 
-.nav .container ul li {
+.nav .my-container ul li {
   display: flex;
   align-items: center;
   text-transform: uppercase;
   margin: 0 1em 0 1em;
 }
 
-.nav .container ul li a {
+.nav .my-container ul li a {
   text-decoration: none;
   display: inline-block;
   font-weight: 800;
@@ -11009,9 +11020,166 @@ html {
   border-bottom: 0.4em solid transparent;
 }
 
-.nav .container ul li a.active,
-.nav .container ul li a:hover {
+.nav .my-container ul li a.active,
+.nav .my-container ul li a:hover {
   color: #0282F9;
   border-bottom: 0.4em solid #0282F9;
+}
+
+main .content-section {
+  background-color: black;
+  padding: 80px 0;
+}
+
+main .content-section .my-container {
+  align-items: center;
+  position: relative;
+}
+
+main .content-section .my-container .title {
+  position: absolute;
+  top: -20%;
+  background-color: #0282F9;
+  color: white;
+  padding: 0.7em 1.3em;
+  font-size: 0.8em;
+}
+
+main .content-section .my-container .thumbs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.4em;
+}
+
+main .content-section .my-container .thumbs .thumb {
+  flex-basis: calc(16.6666666667% - 2.4em);
+}
+
+main .content-section .my-container .thumbs .thumb .image-box {
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+main .content-section .my-container .thumbs .thumb .image-box img {
+  width: 100%;
+}
+
+main .content-section .my-container .thumbs .thumb .thumb-title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+main .product-section {
+  background-color: #0282F9;
+}
+
+main .product-section .my-container {
+  justify-content: space-between;
+  color: white;
+  padding: 50px;
+}
+
+main .product-section .my-container .item {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+main .product-section .my-container .item img {
+  max-width: 60px;
+  max-height: 60px;
+  margin-right: 0.5em;
+}
+
+main .product-section .my-container .item span {
+  text-transform: uppercase;
+}
+
+.footer-container {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-size: contain;
+}
+
+.footer-container .background-logo {
+  padding: 2em 0;
+  background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+  background-position-y: 50%;
+}
+
+.footer-container .background-logo .first-col,
+.footer-container .background-logo .second-col,
+.footer-container .background-logo .third-col {
+  float: left;
+  width: 15%;
+}
+
+.footer-container .background-logo .first-col h3,
+.footer-container .background-logo .second-col h3,
+.footer-container .background-logo .third-col h3 {
+  text-transform: uppercase;
+  padding: 0.8em 0;
+  color: white;
+}
+
+.footer-container .background-logo .first-col ul,
+.footer-container .background-logo .second-col ul,
+.footer-container .background-logo .third-col ul {
+  list-style: none;
+}
+
+.footer-container .background-logo .first-col ul li,
+.footer-container .background-logo .second-col ul li,
+.footer-container .background-logo .third-col ul li {
+  padding-bottom: 0.5em;
+  font-size: 0.9em;
+}
+
+.footer-container .background-logo .first-col ul li a,
+.footer-container .background-logo .second-col ul li a,
+.footer-container .background-logo .third-col ul li a {
+  text-decoration: none;
+  color: #959595;
+}
+
+.footer-end {
+  background-color: #303030;
+}
+
+.footer-end .my-container {
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 2em 0;
+}
+
+.footer-end .my-container .sign-up-button {
+  border: 2px solid #0282F9;
+  padding: 1em;
+}
+
+.footer-end .my-container .sign-up-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-end .my-container .social-icon {
+  display: flex;
+  align-items: center;
+}
+
+.footer-end .my-container .social-icon h3 {
+  padding-right: 2em;
+  color: #0282F9;
+}
+
+.footer-end .my-container .social-icon ul li {
+  display: inline-block;
+  padding: 0 0.5em;
 }
 

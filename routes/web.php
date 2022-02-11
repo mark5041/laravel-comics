@@ -14,8 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('guest.layouts.home');
+    $data = ['comics' => config('comics'), 'products' => config('products'), 'social' => config('social'), 'url' => '../../../img/'];
+    return view('guest.layouts.home', $data);
 });
+
+
+
+
+
+
 
 Auth::routes();
 

@@ -9,6 +9,12 @@
 </head>
 <body>
     @include('guest.partials.header')
+    <div class="background">
+        
+    </div>
+    @include('guest.partials.main')
+
+    @include('guest.partials.footer')
 
     <script src="{{asset('js/bootstrap.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
