@@ -1,0 +1,45 @@
+.nav {
+    .container {
+        align-items: center;
+        display: flex;
+        .logo {
+            flex-grow: 4;
+            img {
+                width: 60px;
+            }
+        }
+        ul {
+            list-style: none;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+    
+            li {
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                margin: 0 1em 0 1em;
+    
+                a {
+                    text-decoration: none;
+                    display: inline-block;
+                    font-weight: 800;
+                    font-size: 1em;
+                    line-height: 100px;
+                    color: black;
+                    border-bottom: 0.4em solid transparent;
+    
+                    &.active, &:hover {
+                        color: $lightblue;
+                        border-bottom: 0.4em solid $lightblue;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    
+
+    
+}
