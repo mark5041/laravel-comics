@@ -32,6 +32,12 @@
                         color: $lightblue;
                         border-bottom: 0.4em solid $lightblue;
                     }
+
+                    svg[class*="svg"] {
+                        color: $lightblue;
+                        vertical-align: text-top;
+                        padding-left: 1.5em;
+                    }
                 }
                 
             }
