@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = ['comics' => config('comics'), 'products' => config('products'), 'social' => config('social'), 'url' => '../../../img/'];
-    return view('guest.partials.main', $data);
+    return view('guest.main', $data);
 })->name('home');
 
 Route::get('details/{id}', function ($id) {
@@ -35,7 +35,7 @@ Route::get('details/{id}', function ($id) {
         'url' => '../../../img/'
     ];
 
-    return view('guest.partials.comic_main', $data);
+    return view('guest.comic_main', $data);
 
 })->name('details');
 

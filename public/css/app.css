@@ -20409,6 +20409,52 @@ main.comic .divider_blue .cover span:last-child {
   text-align: center;
 }
 
+main.comic div[class*=col] {
+  display: flex;
+}
+
+main.comic .info_section .info {
+  margin-right: 3em;
+}
+
+main.comic .info_section .info h1 {
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+
+main.comic .info_section .info .price {
+  width: 100%;
+  background-color: #55ba59;
+  color: #bafd9c;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+main.comic .info_section .info .price .left_side {
+  flex-basis: 75%;
+  justify-content: space-between;
+  padding: 1em;
+  border: 1px solid rgba(41, 41, 41, 0.801);
+}
+
+main.comic .info_section .info .price .right_side {
+  flex-basis: 25%;
+  padding: 1em 0.3em;
+  border: 1px solid rgba(41, 41, 41, 0.801);
+}
+
+main.comic .info_section .info .description {
+  color: grey;
+  font-weight: bold;
+  line-height: 2em;
+  font-size: 1em;
+}
+
+main.comic .adv {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .footer-container {
   background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
   background-size: contain;
