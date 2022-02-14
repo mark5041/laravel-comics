@@ -1,4 +1,4 @@
-main {
+main.home {
     .content-section {
         background-color: black;
         position: relative;
@@ -62,6 +62,38 @@ main {
         
                 span {
                     text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+main.comic {
+    .divider_blue {
+        background-color: $lightblue;
+        width: 100%;
+        height: 70px;
+        .cover {
+            border: 1px solid white;
+            position: relative;
+            top: -350%;
+            left: 12.5%;
+            width: 192px;
+            height: 291px;
+            span {
+                background-color: $cian;
+                color: white;
+                position: absolute;
+                left: 0;
+                &:first-of-type {
+                    top: 0;
+                    padding: 4px;
+                }
+                &:last-child {
+                    padding: 5px;
+                    bottom: 0;
+                    width: 100%;
+                    text-align: center;
                 }
             }
         }

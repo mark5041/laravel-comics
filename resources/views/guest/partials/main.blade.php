@@ -1,7 +1,7 @@
 @extends('guest.layouts.home')
 
 @section('homapage')
-<main>
+<main class="home">
     <div class="content-section">
         <div class="my-container">
             <div class="title">
@@ -9,12 +9,12 @@
             </div>
             <div class="thumbs">
             @foreach($comics as $card) 
-                <div class="thumb">
+                <a class="thumb" href="{{route('details', $card['id'])}}">
                     <div class="image-box">
                         <img src="{{$card['thumb']}}" alt="{{$card['title']}}">
                     </div>
                     <span class="thumb-title">{{$card['series']}}</span>
-                </div>
+                </a>
             @endforeach
             </div>
         </div>

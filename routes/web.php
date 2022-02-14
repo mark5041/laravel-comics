@@ -16,7 +16,28 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = ['comics' => config('comics'), 'products' => config('products'), 'social' => config('social'), 'url' => '../../../img/'];
     return view('guest.partials.main', $data);
-});
+})->name('home');
+
+Route::get('details/{id}', function ($id) {
+
+    $collection = collect(config('comics'));
+    $comic = $collection->where('id', $id);
+
+    $singleComic = '';
+    foreach ($comic as $value) {
+        $singleComic = $value;
+    }
+
+    $data = [
+        'comic' => $singleComic, 
+        'products' => config('products'), 
+        'social' => config('social'), 
+        'url' => '../../../img/'
+    ];
+
+    return view('guest.partials.comic_main', $data);
+
+})->name('details');
 
 
 

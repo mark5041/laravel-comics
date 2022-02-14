@@ -19,3 +19,11 @@ html {
     background-size: cover;
     height: 420px;
 }
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
