@@ -20433,13 +20433,14 @@ main.comic .info_section .info .price {
 main.comic .info_section .info .price .left_side {
   flex-basis: 75%;
   justify-content: space-between;
-  padding: 1em;
   border: 1px solid rgba(41, 41, 41, 0.801);
+  padding: 20px;
 }
 
 main.comic .info_section .info .price .right_side {
   flex-basis: 25%;
-  padding: 1em 0.3em;
+  align-items: center;
+  padding: 20px;
   border: 1px solid rgba(41, 41, 41, 0.801);
 }
 

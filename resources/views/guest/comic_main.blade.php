@@ -24,7 +24,7 @@
                                 </div>
                                 <div class="price_right">AVAILABLE</div>
                             </div>
-                            <div class="right_side">
+                            <div class="right_side d-flex">
                                 <div class="check text-white text-center">
                                     Check Availability <i class="fa-solid fa-caret-down"></i>
                                 </div>
