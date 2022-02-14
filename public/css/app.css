@@ -20206,7 +20206,7 @@ html {
 }
 
 .my-container {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   display: flex;
 }
@@ -20219,19 +20219,19 @@ html {
 
 .nav .my-container {
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav .my-container .logo {
-  flex-grow: 4;
+  flex-grow: 2;
 }
 
 .nav .my-container .logo img {
-  width: 60px;
+  width: 50px;
 }
 
 .nav .my-container ul {
   list-style: none;
-  height: 100%;
   display: flex;
   justify-content: center;
 }
@@ -20248,7 +20248,7 @@ html {
   display: inline-block;
   font-weight: 800;
   font-size: 1em;
-  line-height: 100px;
+  line-height: 80px;
   color: black;
   border-bottom: 0.4em solid transparent;
 }
@@ -20262,26 +20262,54 @@ html {
 .nav .my-container ul li a i {
   color: #0282F9;
   vertical-align: text-top;
-  padding-left: 0.5em;
+  padding-left: 1em;
+}
+
+.nav .my-container ul li input {
+  border: 0;
+  border-bottom: 1px solid black;
+  outline: none;
+  max-width: 100px;
+}
+
+.nav .my-container ul li input::-webkit-input-placeholder {
+  position: absolute;
+  right: 20%;
+  color: black;
+}
+
+.nav .my-container ul li input:focus::-webkit-input-placeholder,
+.nav .my-container ul li input:focus + i {
+  color: transparent;
+}
+
+.nav .my-container ul li i {
+  position: relative;
+  right: 13%;
+  font-size: 0.9em;
 }
 
 main .content-section {
   background-color: black;
+  position: relative;
   padding: 80px 0;
 }
 
 main .content-section .my-container {
   align-items: center;
-  position: relative;
 }
 
 main .content-section .my-container .title {
   position: absolute;
-  top: -20%;
+  top: -3%;
   background-color: #0282F9;
   color: white;
   padding: 0.7em 1.3em;
-  font-size: 0.8em;
+}
+
+main .content-section .my-container .title h1 {
+  font-size: 1.3em;
+  margin: 0;
 }
 
 main .content-section .my-container .thumbs {

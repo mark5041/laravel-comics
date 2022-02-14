@@ -1,4 +1,6 @@
+@extends('guest.layouts.home')
 
+@section('homapage')
 <main>
     <div class="content-section">
         <div class="my-container">
@@ -31,3 +33,4 @@
         </div>
     </div>
 </main>
+@endsection

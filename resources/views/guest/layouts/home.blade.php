@@ -16,7 +16,7 @@
     <div class="background">
         
     </div>
-    @include('guest.partials.main')
+    @yield('homapage')
 
     @include('guest.partials.footer')
 

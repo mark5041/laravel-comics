@@ -1,15 +1,15 @@
 .nav {
     .my-container {
         align-items: center;
+        flex-wrap: wrap;
         .logo {
-            flex-grow: 4;
+            flex-grow: 2;
             img {
-                width: 60px;
+                width: 50px;
             }
         }
         ul {
             list-style: none;
-            height: 100%;
             display: flex;
             justify-content: center;
     
@@ -24,7 +24,7 @@
                     display: inline-block;
                     font-weight: 800;
                     font-size: 1em;
-                    line-height: 100px;
+                    line-height: 80px;
                     color: black;
                     border-bottom: 0.4em solid transparent;
     
@@ -33,11 +33,32 @@
                         border-bottom: 0.4em solid $lightblue;
                     }
 
-                    svg[class*="svg"] {
+                    i {
                         color: $lightblue;
                         vertical-align: text-top;
-                        padding-left: 1.5em;
+                        padding-left: 1em;
                     }
+                }
+                
+                input {
+                    border: 0;
+                    border-bottom: 1px solid black;
+                    outline: none;
+                    max-width: 100px;
+                    &::-webkit-input-placeholder {
+                        position: absolute;
+                        right: 20%;
+                        color: black;
+                    }
+                    &:focus::-webkit-input-placeholder, &:focus + i {
+                        color:transparent;
+                    }
+                }
+
+                i {
+                    position: relative;
+                    right: 13%;
+                    font-size: 0.9em;
                 }
                 
             }
