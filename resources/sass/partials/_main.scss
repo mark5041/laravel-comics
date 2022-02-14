@@ -69,6 +69,10 @@ main.home {
 }
 
 main.comic {
+    .comic_info {
+        padding-top: 2em;
+        padding-bottom: 7em;
+    }
     .divider_blue {
         background-color: $lightblue;
         width: 100%;
@@ -77,7 +81,7 @@ main.comic {
             border: 1px solid white;
             position: relative;
             top: -350%;
-            left: 12.5%;
+            left: 15%;
             width: 192px;
             height: 291px;
             span {
@@ -145,5 +149,59 @@ main.comic {
     .adv {
         flex-direction: column;
         align-items: flex-end;
+    }
+
+    .details {
+        background-color: #f6f6f6;
+        & > .my-container { 
+            padding-bottom: 7em;
+        }
+        .divider-bt {
+            border-bottom: 1px solid grey;
+        }
+
+        div[class*="col"]{
+            flex-direction: column;
+            .paragraph {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                span>a {
+                    font-size: 0.9em;
+                    line-height: 0.9em;
+                }
+            }
+        }
+        
+        .navigation {
+            border-top: 1px solid gray;
+            .my-container {
+                justify-content: space-between;
+                color: #d8d8d8; 
+                border-left: 1px solid gray;
+                border-right: 1px solid gray;
+                .item {
+                    padding: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-grow: 1;
+                    cursor: pointer;
+                    &:not(.item:last-child) {  
+                        border-right: 1px solid gray;
+                    }
+                    img {
+                        max-width: 60px;
+                        max-height: 60px;
+                        margin-right: 0.5em;
+                    }
+            
+                    span {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        
     }
 }

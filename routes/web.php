@@ -31,7 +31,8 @@ Route::get('details/{id}', function ($id) {
     $data = [
         'comic' => $singleComic, 
         'products' => config('products'), 
-        'social' => config('social'), 
+        'social' => config('social'),  
+        'shop' => config('shop'), 
         'url' => '../../../img/'
     ];
 
